@@ -276,7 +276,7 @@ class RouteController extends Controller
             return "Maaf prompt tidak didukung";
         }
         $cek = $this->cekLocation($text);
-        if ($cek != 'true') {
+        if (!str_contains(strtolower($cek), 'true')) {
             return $cek;
         }
         $route = Bus::get(['name', 'routes']);
