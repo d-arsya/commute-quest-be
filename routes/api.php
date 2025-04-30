@@ -21,6 +21,7 @@ Route::controller(RouteController::class)->group(function () {
     Route::post('halte', 'getHalteDetail');
     Route::get('bus', 'getAllBus');
     Route::post('bus', 'getBusDetail');
+    Route::get('coba-chat', 'chatAi');
 });
 
 
