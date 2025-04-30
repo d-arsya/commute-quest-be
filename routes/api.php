@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\ChatController;
+use App\Http\Controllers\Api\RouteController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +15,15 @@ Route::controller(AuthController::class)->group(function () {
     Route::post('forgot-password', 'forgotPassword');
     Route::post('reset-password', 'resetPassword');
 });
+
+Route::controller(RouteController::class)->group(function () {
+    Route::get('halte', 'getAllHalte');
+    Route::post('halte', 'getHalteDetail');
+    Route::get('bus', 'getAllBus');
+    Route::post('bus', 'getBusDetail');
+});
+
+
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::controller(AuthController::class)->group(function () {

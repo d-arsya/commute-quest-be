@@ -1,0 +1,2254 @@
+{
+    "data": [
+        {
+            "name": "AA YKPN",
+            "latitude": "-7.786142597366714",
+            "longitude": "110.3834736929868"
+        },
+        {
+            "name": "Abu Bakar Ali",
+            "latitude": "-7.78999722569671",
+            "longitude": "110.3663675884504"
+        },
+        {
+            "name": "AM Sangaji - A",
+            "latitude": "-7.775811771951459",
+            "longitude": "110.3679821993535"
+        },
+        {
+            "name": "AM Sangaji - B",
+            "latitude": "-7.777332654997285",
+            "longitude": "110.3677226268281"
+        },
+        {
+            "name": "Ambarukmo - A",
+            "latitude": "-7.783291927830628",
+            "longitude": "110.4017855898173"
+        },
+        {
+            "name": "Ambarukmo - B",
+            "latitude": "-7.783186272776979",
+            "longitude": "110.4024384970305"
+        },
+        {
+            "name": "Among Rogo - A",
+            "latitude": "-7.798460063574856",
+            "longitude": "110.3848183854638"
+        },
+        {
+            "name": "Among Rogo - B",
+            "latitude": "-7.798492732800027",
+            "longitude": "110.3848516366283"
+        },
+        {
+            "name": "APMD - A",
+            "latitude": "-7.791067621602469",
+            "longitude": "110.3933486910937"
+        },
+        {
+            "name": "APMD - B",
+            "latitude": "-7.791593783533322",
+            "longitude": "110.3932475801638"
+        },
+        {
+            "name": "Atakrib",
+            "latitude": "-7.782776106770762",
+            "longitude": "110.3583035246292"
+        },
+        {
+            "name": "Babarsari - A",
+            "latitude": "-7.773969898609866",
+            "longitude": "110.4122175546245"
+        },
+        {
+            "name": "Babarsari - B",
+            "latitude": "-7.773920028110287",
+            "longitude": "110.412098850242"
+        },
+        {
+            "name": "Bandara Adisutjipto",
+            "latitude": "-7.784496875236842",
+            "longitude": "110.4357118521903"
+        },
+        {
+            "name": "Banguntapan - A",
+            "latitude": "-7.807797305086843",
+            "longitude": "110.4021653904038"
+        },
+        {
+            "name": "Banguntapan - B",
+            "latitude": "-7.807292865727086",
+            "longitude": "110.4022093754081"
+        },
+        {
+            "name": "Basen",
+            "latitude": "-7.819091880477381",
+            "longitude": "110.3951045416087"
+        },
+        {
+            "name": "Bayeman - A",
+            "latitude": "-7.800345555415001",
+            "longitude": "110.337184924967"
+        },
+        {
+            "name": "Bayeman - B",
+            "latitude": "-7.800401494033245",
+            "longitude": "110.3370261330848"
+        },
+        {
+            "name": "Bhayangkara",
+            "latitude": "-7.799309044833184",
+            "longitude": "110.3620973032231"
+        },
+        {
+            "name": "Binamarga",
+            "latitude": "-7.774443210902831",
+            "longitude": "110.4306990205831"
+        },
+        {
+            "name": "Biologi UGM",
+            "latitude": "-7.765289310205057",
+            "longitude": "110.3769046857865"
+        },
+        {
+            "name": "BKD",
+            "latitude": "-7.78246479988358",
+            "longitude": "110.3561939451921"
+        },
+        {
+            "name": "BKPM",
+            "latitude": "-7.800371609538527",
+            "longitude": "110.4023503049315"
+        },
+        {
+            "name": "Blok O",
+            "latitude": "-7.797242335084495",
+            "longitude": "110.4099094677265"
+        },
+        {
+            "name": "Borobudur Plaza",
+            "latitude": "-7.778837742413504",
+            "longitude": "110.3620288017014"
+        },
+        {
+            "name": "Boulevard UII",
+            "latitude": "-7.687506019665772",
+            "longitude": "110.4172730164303"
+        },
+        {
+            "name": "BRI Bantul",
+            "latitude": "-7.881989739844836",
+            "longitude": "110.332318295976"
+        },
+        {
+            "name": "Budi Mulia Dua - A",
+            "latitude": "-7.742939708360838",
+            "longitude": "110.4341932743889"
+        },
+        {
+            "name": "Budi Mulia Dua - B",
+            "latitude": "-7.743195333062269",
+            "longitude": "110.4342418442555"
+        },
+        {
+            "name": "Cik Di Tiro",
+            "latitude": "-7.782356981091502",
+            "longitude": "110.3751039267179"
+        },
+        {
+            "name": "De Britto",
+            "latitude": "-7.783094179431649",
+            "longitude": "110.393893044921"
+        },
+        {
+            "name": "Demak Ijo - A",
+            "latitude": "-7.776496315213651",
+            "longitude": "110.3320082068989"
+        },
+        {
+            "name": "Demak Ijo - B",
+            "latitude": "-7.775781902001397",
+            "longitude": "110.3320381145199"
+        },
+        {
+            "name": "Dentes Godean",
+            "latitude": "-7.779783261956849",
+            "longitude": "110.3437403245553"
+        },
+        {
+            "name": "Diklat PU",
+            "latitude": "-7.819036498928452",
+            "longitude": "110.3951159509306"
+        },
+        {
+            "name": "Diponegoro",
+            "latitude": "-7.782886050904352",
+            "longitude": "110.3625524289805"
+        },
+        {
+            "name": "Dishub DIY",
+            "latitude": "-7.778035362244532",
+            "longitude": "110.4150786377828"
+        },
+        {
+            "name": "Disnakertas - A",
+            "latitude": "-7.769365026548265",
+            "longitude": "110.4311658027327"
+        },
+        {
+            "name": "Disnakertas - B",
+            "latitude": "-7.767862534794238",
+            "longitude": "110.4314853474359"
+        },
+        {
+            "name": "Dongkelan - A",
+            "latitude": "-7.830194984274685",
+            "longitude": "110.3538005452357"
+        },
+        {
+            "name": "Dongkelan - B",
+            "latitude": "-7.829192237195687",
+            "longitude": "110.3539896010057"
+        },
+        {
+            "name": "Dr. Yap",
+            "latitude": "-7.781218170301287",
+            "longitude": "110.3752075430388"
+        },
+        {
+            "name": "Druwo - A",
+            "latitude": "-7.833873876423153",
+            "longitude": "110.3664086446038"
+        },
+        {
+            "name": "Druwo - B",
+            "latitude": "-7.83363160766758",
+            "longitude": "110.3666028785497"
+        },
+        {
+            "name": "Dusun Kledokan - A",
+            "latitude": "-7.672637127187174",
+            "longitude": "110.4173659407891"
+        },
+        {
+            "name": "Dusun Kledokan - B",
+            "latitude": "-7.672725639345671",
+            "longitude": "110.4174025497431"
+        },
+        {
+            "name": "Dusun Ngawen",
+            "latitude": "-7.744844127086781",
+            "longitude": "110.3438794241354"
+        },
+        {
+            "name": "Edotel Kalasan - A",
+            "latitude": "-7.756753562176333",
+            "longitude": "110.4826509564291"
+        },
+        {
+            "name": "Edotel Kalasan - B",
+            "latitude": "-7.756636054075252",
+            "longitude": "110.4826098700493"
+        },
+        {
+            "name": "Eks Bioskop Mataram",
+            "latitude": "-7.792280199613883",
+            "longitude": "110.3779120967206"
+        },
+        {
+            "name": "Eks Hotel Nataputra",
+            "latitude": "-7.800884337786758",
+            "longitude": "110.3489019150878"
+        },
+        {
+            "name": "Eks Stasiun Bantul",
+            "latitude": "-7.887393093341532",
+            "longitude": "110.3293206138956"
+        },
+        {
+            "name": "FKG UGM - A",
+            "latitude": "-7.771354102242212",
+            "longitude": "110.3751187736684"
+        },
+        {
+            "name": "FKG UGM - B",
+            "latitude": "-7.771477150958799",
+            "longitude": "110.3753009186257"
+        },
+        {
+            "name": "Galeria Mall",
+            "latitude": "-7.782352284306391",
+            "longitude": "110.379319241052"
+        },
+        {
+            "name": "Gambiran - A",
+            "latitude": "-7.816891898251392",
+            "longitude": "110.3910445672389"
+        },
+        {
+            "name": "Gambiran - B",
+            "latitude": "-7.816977129985718",
+            "longitude": "110.3909631660285"
+        },
+        {
+            "name": "Gardu PLN - A",
+            "latitude": "-7.739254721430135",
+            "longitude": "110.3924607439524"
+        },
+        {
+            "name": "Gardu PLN - B",
+            "latitude": "-7.738779967730459",
+            "longitude": "110.3927810175098"
+        },
+        {
+            "name": "Gedung Wanita",
+            "latitude": "-7.783187389397349",
+            "longitude": "110.3927095003862"
+        },
+        {
+            "name": "Gembira Loka - A",
+            "latitude": "-7.802258985306559",
+            "longitude": "110.3999662675686"
+        },
+        {
+            "name": "Gembira Loka - B",
+            "latitude": "-7.802261917303131",
+            "longitude": "110.3988038386057"
+        },
+        {
+            "name": "Gereja Pugeran - A",
+            "latitude": "-7.816599024664522",
+            "longitude": "110.3558994461767"
+        },
+        {
+            "name": "Gereja Pugeran - B",
+            "latitude": "-7.816421568608621",
+            "longitude": "110.3559384355499"
+        },
+        {
+            "name": "Gudang SGM - A",
+            "latitude": "-7.827155206781802",
+            "longitude": "110.3899787359757"
+        },
+        {
+            "name": "Gudang SGM - B",
+            "latitude": "-7.827272152941839",
+            "longitude": "110.3900434714648"
+        },
+        {
+            "name": "Hayam Wuruk - A",
+            "latitude": "-7.795675735303051",
+            "longitude": "110.3726298482469"
+        },
+        {
+            "name": "Hayam Wuruk - B",
+            "latitude": "-7.794607884514666",
+            "longitude": "110.3727584784626"
+        },
+        {
+            "name": "Hotel Abadi",
+            "latitude": "-7.790017775031488",
+            "longitude": "110.3632396455338"
+        },
+        {
+            "name": "Hotel Noola",
+            "latitude": "-7.815674757904296",
+            "longitude": "110.3683944199677"
+        },
+        {
+            "name": "Hotel Pramesthi",
+            "latitude": "-7.821579861928585",
+            "longitude": "110.3653847412579"
+        },
+        {
+            "name": "Hotel Utara",
+            "latitude": "-7.780411562936633",
+            "longitude": "110.3608993882332"
+        },
+        {
+            "name": "Hotel Vidi",
+            "latitude": "-7.761786095388999",
+            "longitude": "110.3802079847688"
+        },
+        {
+            "name": "Hyundai",
+            "latitude": "-7.783518272807576",
+            "longitude": "110.4283484706169"
+        },
+        {
+            "name": "Indomaret Klajuran - A",
+            "latitude": "-7.772252950343661",
+            "longitude": "110.3117499041002"
+        },
+        {
+            "name": "Indomaret Klajuran - B",
+            "latitude": "-7.772337874193307",
+            "longitude": "110.3118068009989"
+        },
+        {
+            "name": "Indomaret Pokoh Sambiroto - A",
+            "latitude": "-7.735553837493463",
+            "longitude": "110.4346127657847"
+        },
+        {
+            "name": "Indomaret Pokoh Sambiroto - B",
+            "latitude": "-7.73607815927378",
+            "longitude": "110.4346183086662"
+        },
+        {
+            "name": "Instiper - A",
+            "latitude": "-7.764458604736042",
+            "longitude": "110.4236323136857"
+        },
+        {
+            "name": "Instiper - B",
+            "latitude": "-7.764321714256751",
+            "longitude": "110.4235365605174"
+        },
+        {
+            "name": "Janti Selatan",
+            "latitude": "-7.785771783797726",
+            "longitude": "110.4104819020574"
+        },
+        {
+            "name": "Janti Utara",
+            "latitude": "-7.783211372389565",
+            "longitude": "110.4116721844196"
+        },
+        {
+            "name": "Jayakarta",
+            "latitude": "-7.783403643280402",
+            "longitude": "110.4194087950071"
+        },
+        {
+            "name": "JEC",
+            "latitude": "-7.79858619891963",
+            "longitude": "110.4029216204187"
+        },
+        {
+            "name": "Jend. Sudirman - A",
+            "latitude": "-7.782987636501905",
+            "longitude": "110.3695503467615"
+        },
+        {
+            "name": "Jend. Sudirman - B",
+            "latitude": "-7.782878419129682",
+            "longitude": "110.3688234974799"
+        },
+        {
+            "name": "Jl. Mataram",
+            "latitude": "-7.794209492698625",
+            "longitude": "110.3680595692046"
+        },
+        {
+            "name": "Jl. Raya Kabunan - A",
+            "latitude": "-7.71320425588706",
+            "longitude": "110.4428363323811"
+        },
+        {
+            "name": "Jl. Raya Kabunan - B",
+            "latitude": "-7.714560851223359",
+            "longitude": "110.4419171811613"
+        },
+        {
+            "name": "Jlagran",
+            "latitude": "-7.789466616694711",
+            "longitude": "110.3588681352364"
+        },
+        {
+            "name": "Jogja City Mall - A",
+            "latitude": "-7.75329611991766",
+            "longitude": "110.3622202040442"
+        },
+        {
+            "name": "Jogja City Mall - B",
+            "latitude": "-7.753082448999656",
+            "longitude": "110.3621582168919"
+        },
+        {
+            "name": "Jogjatronik",
+            "latitude": "-7.806218137285512",
+            "longitude": "110.3693016824951"
+        },
+        {
+            "name": "Jogokariyan - A",
+            "latitude": "-7.823349792767075",
+            "longitude": "110.3677356451043"
+        },
+        {
+            "name": "Jogokariyan - B",
+            "latitude": "-7.823250046105328",
+            "longitude": "110.3678127694954"
+        },
+        {
+            "name": "Jokteng Kulon",
+            "latitude": "-7.813247010420418",
+            "longitude": "110.3573457352515"
+        },
+        {
+            "name": "Jokteng Wetan",
+            "latitude": "-7.814655874833267",
+            "longitude": "110.3672209427684"
+        },
+        {
+            "name": "Kantor Kal. Pendowoharjo - A",
+            "latitude": "-7.863370447522574",
+            "longitude": "110.3395220282069"
+        },
+        {
+            "name": "Kantor Kal. Pendowoharjo - B",
+            "latitude": "-7.863684657970809",
+            "longitude": "110.3395026999057"
+        },
+        {
+            "name": "Kantor Kal. Sidoarum - A",
+            "latitude": "-7.775581211590342",
+            "longitude": "110.3253689650386"
+        },
+        {
+            "name": "Kantor Kal. Sidoarum - B",
+            "latitude": "-7.775609149058364",
+            "longitude": "110.3252645362436"
+        },
+        {
+            "name": "Kantor Kal. Sukoharjo - A",
+            "latitude": "-7.703842861336276",
+            "longitude": "110.4251083190568"
+        },
+        {
+            "name": "Kantor Kal. Sukoharjo - B",
+            "latitude": "-7.703826757992362",
+            "longitude": "110.4252289285442"
+        },
+        {
+            "name": "Kantor Kal. Wedomartani - A",
+            "latitude": "-7.731499913919994",
+            "longitude": "110.434826113595"
+        },
+        {
+            "name": "Kantor Kal. Wedomartani - B",
+            "latitude": "-7.731300495490047",
+            "longitude": "110.4348725620929"
+        },
+        {
+            "name": "Kantor Kap. Bantul",
+            "latitude": "-7.883542596767591",
+            "longitude": "110.3318344135898"
+        },
+        {
+            "name": "Kantor Kap. Godean - A",
+            "latitude": "-7.76936817846019",
+            "longitude": "110.3002421412882"
+        },
+        {
+            "name": "Kantor Kap. Godean - B",
+            "latitude": "-7.769384786753777",
+            "longitude": "110.3001432912903"
+        },
+        {
+            "name": "Kantor Kap. Ngaglik",
+            "latitude": "-7.724101510005356",
+            "longitude": "110.4012721976523"
+        },
+        {
+            "name": "Kantor Kesbangpol - A",
+            "latitude": "-7.856323960123389",
+            "longitude": "110.3414023558846"
+        },
+        {
+            "name": "Kantor Kesbangpol - B",
+            "latitude": "-7.856744316401182",
+            "longitude": "110.34138014991"
+        },
+        {
+            "name": "Kantor Pos Demak Ijo - A",
+            "latitude": "-7.778028785753584",
+            "longitude": "110.3359614758828"
+        },
+        {
+            "name": "Kantor Pos Demak Ijo - B",
+            "latitude": "-7.778082912259433",
+            "longitude": "110.3359798112912"
+        },
+        {
+            "name": "Kanwil DJPb",
+            "latitude": "-7.783304167760857",
+            "longitude": "110.4239848666188"
+        },
+        {
+            "name": "Karanggede",
+            "latitude": "-7.87433153514455",
+            "longitude": "110.3358229308734"
+        },
+        {
+            "name": "Karangjati - A",
+            "latitude": "-7.764031024464778",
+            "longitude": "110.3692427926144"
+        },
+        {
+            "name": "Karangjati - B",
+            "latitude": "-7.764451226225798",
+            "longitude": "110.3691527548787"
+        },
+        {
+            "name": "Karangwaru - A",
+            "latitude": "-7.772260786383682",
+            "longitude": "110.3613267980689"
+        },
+        {
+            "name": "Karangwaru - B",
+            "latitude": "-7.774265388581278",
+            "longitude": "110.3611797459149"
+        },
+        {
+            "name": "Katamso",
+            "latitude": "-7.802722139935351",
+            "longitude": "110.3692150704464"
+        },
+        {
+            "name": "Kehutanan - A",
+            "latitude": "-7.819569573096381",
+            "longitude": "110.4012084770629"
+        },
+        {
+            "name": "Kehutanan - B",
+            "latitude": "-7.81810671238919",
+            "longitude": "110.4018060390308"
+        },
+        {
+            "name": "Kentungan",
+            "latitude": "-7.756097586164051",
+            "longitude": "110.3846257352854"
+        },
+        {
+            "name": "KHA Dahlan - A",
+            "latitude": "-7.801281410428291",
+            "longitude": "110.3601332458649"
+        },
+        {
+            "name": "KHA Dahlan - B",
+            "latitude": "-7.8012354245855",
+            "longitude": "110.3606238855199"
+        },
+        {
+            "name": "KKP Yogyakarta",
+            "latitude": "-7.782053361232953",
+            "longitude": "110.4298947038487"
+        },
+        {
+            "name": "Kledokan",
+            "latitude": "-7.778325266065128",
+            "longitude": "110.4085421596126"
+        },
+        {
+            "name": "Kopma UGM",
+            "latitude": "-7.774326485153363",
+            "longitude": "110.375122427873"
+        },
+        {
+            "name": "Koramil Godean - A",
+            "latitude": "-7.771012841080518",
+            "longitude": "110.3068559170124"
+        },
+        {
+            "name": "Koramil Godean - B",
+            "latitude": "-7.771066834056486",
+            "longitude": "110.3068132700207"
+        },
+        {
+            "name": "Kosudgama - A",
+            "latitude": "-7.776170307629101",
+            "longitude": "110.3786103224876"
+        },
+        {
+            "name": "Kosudgama - B",
+            "latitude": "-7.776250787835195",
+            "longitude": "110.378220285927"
+        },
+        {
+            "name": "Kotabaru",
+            "latitude": "-7.784660014717669",
+            "longitude": "110.3714002534298"
+        },
+        {
+            "name": "KPPN",
+            "latitude": "-7.801101123133765",
+            "longitude": "110.384323893609"
+        },
+        {
+            "name": "KR - A",
+            "latitude": "-7.781691919372899",
+            "longitude": "110.4505032385632"
+        },
+        {
+            "name": "KR - B",
+            "latitude": "-7.782553626048058",
+            "longitude": "110.4487230798708"
+        },
+        {
+            "name": "Kridosono",
+            "latitude": "-7.787320558300743",
+            "longitude": "110.3753668197951"
+        },
+        {
+            "name": "KS Tubun",
+            "latitude": "-7.798691689878895",
+            "longitude": "110.356411921677"
+        },
+        {
+            "name": "KUA Depok - A",
+            "latitude": "-7.755546046870756",
+            "longitude": "110.4337925098258"
+        },
+        {
+            "name": "KUA Depok - B",
+            "latitude": "-7.755474372374646",
+            "longitude": "110.4338732626625"
+        },
+        {
+            "name": "Lap. Karang - A",
+            "latitude": "-7.822378697987562",
+            "longitude": "110.3965297021768"
+        },
+        {
+            "name": "Lap. Karang - B",
+            "latitude": "-7.822387362647606",
+            "longitude": "110.3965976606348"
+        },
+        {
+            "name": "Lap. Kasihan - A",
+            "latitude": "-7.824987639702162",
+            "longitude": "110.3281432120096"
+        },
+        {
+            "name": "Lap. Kasihan - B",
+            "latitude": "-7.826238488422586",
+            "longitude": "110.3289922416753"
+        },
+        {
+            "name": "Lap. Klidon - A",
+            "latitude": "-7.704223148515394",
+            "longitude": "110.4265713356663"
+        },
+        {
+            "name": "Lap. Klidon - B",
+            "latitude": "-7.704146579912035",
+            "longitude": "110.426464910091"
+        },
+        {
+            "name": "Lapas Wirogunan - A",
+            "latitude": "-7.803958170810162",
+            "longitude": "110.3782486388699"
+        },
+        {
+            "name": "Lapas Wirogunan - B",
+            "latitude": "-7.804202043190744",
+            "longitude": "110.3782460066073"
+        },
+        {
+            "name": "Lembah UGM - A",
+            "latitude": "-7.772457521885602",
+            "longitude": "110.3822829025151"
+        },
+        {
+            "name": "Lembah UGM - B",
+            "latitude": "-7.772331767994436",
+            "longitude": "110.3814919682784"
+        },
+        {
+            "name": "Lempuyangan - A",
+            "latitude": "-7.790495493301218",
+            "longitude": "110.3735408200255"
+        },
+        {
+            "name": "Lempuyangan - B",
+            "latitude": "-7.790440963677219",
+            "longitude": "110.3736389695007"
+        },
+        {
+            "name": "Letjen Suprapto",
+            "latitude": "-7.790841209618794",
+            "longitude": "110.3574368532155"
+        },
+        {
+            "name": "Lowanu - A",
+            "latitude": "-7.8170204141884",
+            "longitude": "110.3760278486711"
+        },
+        {
+            "name": "Lowanu - B",
+            "latitude": "-7.816813296074375",
+            "longitude": "110.3760253656257"
+        },
+        {
+            "name": "LPP",
+            "latitude": "-7.783111464344003",
+            "longitude": "110.3861367329788"
+        },
+        {
+            "name": "Madukismo - A",
+            "latitude": "-7.828778308300683",
+            "longitude": "110.3443374085714"
+        },
+        {
+            "name": "Madukismo - B",
+            "latitude": "-7.828476281333777",
+            "longitude": "110.3443487969364"
+        },
+        {
+            "name": "Maguwo Sambilegi",
+            "latitude": "-7.783405950187866",
+            "longitude": "110.4309894596263"
+        },
+        {
+            "name": "Makam Gajah - A",
+            "latitude": "-7.801958530814725",
+            "longitude": "110.387463673357"
+        },
+        {
+            "name": "Makam Gajah - B",
+            "latitude": "-7.80199366862951",
+            "longitude": "110.3873991430362"
+        },
+        {
+            "name": "Makam Prajurit",
+            "latitude": "-7.807422808563606",
+            "longitude": "110.3879563314037"
+        },
+        {
+            "name": "Makam Sorogenen",
+            "latitude": "-7.783441197837376",
+            "longitude": "110.4412483560139"
+        },
+        {
+            "name": "Malioboro 1",
+            "latitude": "-7.790849355492073",
+            "longitude": "110.3661219733453"
+        },
+        {
+            "name": "Malioboro 2",
+            "latitude": "-7.795218989194843",
+            "longitude": "110.3655917053972"
+        },
+        {
+            "name": "Malioboro 3",
+            "latitude": "-7.799900047657003",
+            "longitude": "110.3649983261953"
+        },
+        {
+            "name": "MAN 2 Sleman - A",
+            "latitude": "-7.750380091714115",
+            "longitude": "110.4345487081625"
+        },
+        {
+            "name": "MAN 2 Sleman - B",
+            "latitude": "-7.750413983945769",
+            "longitude": "110.4345890567083"
+        },
+        {
+            "name": "Mandala Krida - A",
+            "latitude": "-7.797506228646609",
+            "longitude": "110.3832191417565"
+        },
+        {
+            "name": "Mandala Krida - B",
+            "latitude": "-7.797481333582026",
+            "longitude": "110.3833457430509"
+        },
+        {
+            "name": "Manggung",
+            "latitude": "-7.758048545294107",
+            "longitude": "110.3864646165678"
+        },
+        {
+            "name": "Mangkubumi 1",
+            "latitude": "-7.784762988708513",
+            "longitude": "110.3668631453825"
+        },
+        {
+            "name": "Mangkubumi 2",
+            "latitude": "-7.787674480326208",
+            "longitude": "110.3664996371065"
+        },
+        {
+            "name": "McD",
+            "latitude": "-7.779391564681468",
+            "longitude": "110.3420902531618"
+        },
+        {
+            "name": "McD Jakal",
+            "latitude": "-7.76277996621778",
+            "longitude": "110.3798946527681"
+        },
+        {
+            "name": "Mirota Godean - A",
+            "latitude": "-7.781081544105324",
+            "longitude": "110.3497172892986"
+        },
+        {
+            "name": "Mirota Godean - B",
+            "latitude": "-7.781256969909126",
+            "longitude": "110.35037314529"
+        },
+        {
+            "name": "MM UGM",
+            "latitude": "-7.76502047524419",
+            "longitude": "110.3770024383373"
+        },
+        {
+            "name": "MMTC Yogyakarta",
+            "latitude": "-7.750655205559887",
+            "longitude": "110.3622625478611"
+        },
+        {
+            "name": "Monjali - A",
+            "latitude": "-7.750564218416428",
+            "longitude": "110.3676247870055"
+        },
+        {
+            "name": "Monjali - B",
+            "latitude": "-7.750797366775847",
+            "longitude": "110.3687498676057"
+        },
+        {
+            "name": "Mualimin - A",
+            "latitude": "-7.807874951280417",
+            "longitude": "110.3509511223963"
+        },
+        {
+            "name": "Mualimin - B",
+            "latitude": "-7.808111035677529",
+            "longitude": "110.352263179975"
+        },
+        {
+            "name": "Museum Bahari",
+            "latitude": "-7.800978460887059",
+            "longitude": "110.349279338823"
+        },
+        {
+            "name": "Museum Biologi",
+            "latitude": "-7.801628575660017",
+            "longitude": "110.3741501960182"
+        },
+        {
+            "name": "Museum Perjuangan",
+            "latitude": "-7.815140695061704",
+            "longitude": "110.3718584571201"
+        },
+        {
+            "name": "Neutron Godean - A",
+            "latitude": "-7.771875130918229",
+            "longitude": "110.3103054928345"
+        },
+        {
+            "name": "Neutron Godean - B",
+            "latitude": "-7.771991667597756",
+            "longitude": "110.3104892475561"
+        },
+        {
+            "name": "Ngabean",
+            "latitude": "-7.803719423352623",
+            "longitude": "110.3562356047293"
+        },
+        {
+            "name": "Nogotirto (Metro) - A",
+            "latitude": "-7.777692238862882",
+            "longitude": "110.3343640777648"
+        },
+        {
+            "name": "Nogotirto (Metro) - B",
+            "latitude": "-7.777730698419631",
+            "longitude": "110.3343471571627"
+        },
+        {
+            "name": "Nyutran Tamansiswa",
+            "latitude": "-7.810933380619861",
+            "longitude": "110.3769568534698"
+        },
+        {
+            "name": "Pakualaman",
+            "latitude": "-7.801648858058165",
+            "longitude": "110.3757690150404"
+        },
+        {
+            "name": "Pakuwon Mall - A",
+            "latitude": "-7.758157206880619",
+            "longitude": "110.3994782782622"
+        },
+        {
+            "name": "Pakuwon Mall - B",
+            "latitude": "-7.758039275859676",
+            "longitude": "110.3986393060563"
+        },
+        {
+            "name": "Pandeyan",
+            "latitude": "-7.815783326626",
+            "longitude": "110.3864024602756"
+        },
+        {
+            "name": "Park and Ride Gamping",
+            "latitude": "-7.802453524659041",
+            "longitude": "110.3148782705168"
+        },
+        {
+            "name": "Pasar Bantul - A",
+            "latitude": "-7.885246269953949",
+            "longitude": "110.3310454416766"
+        },
+        {
+            "name": "Pasar Bantul - B",
+            "latitude": "-7.88512046276981",
+            "longitude": "110.3311980740765"
+        },
+        {
+            "name": "Pasar Gamping",
+            "latitude": "-7.800627092999474",
+            "longitude": "110.3238105498283"
+        },
+        {
+            "name": "Pasar Giwangan - A",
+            "latitude": "-7.83151066532722",
+            "longitude": "110.390009415327"
+        },
+        {
+            "name": "Pasar Giwangan - B",
+            "latitude": "-7.832482093841618",
+            "longitude": "110.3901992678766"
+        },
+        {
+            "name": "Pasar Jangkang - A",
+            "latitude": "-7.702111134526663",
+            "longitude": "110.4473329530507"
+        },
+        {
+            "name": "Pasar Jangkang - B",
+            "latitude": "-7.702045851167787",
+            "longitude": "110.4474230085052"
+        },
+        {
+            "name": "Pasar Kalasan - B",
+            "latitude": "-7.769912653769901",
+            "longitude": "110.4689930749949"
+        },
+        {
+            "name": "Pasar Kalasan - A",
+            "latitude": "-7.769382287646733",
+            "longitude": "110.4696318273989"
+        },
+        {
+            "name": "Pasar Kolombo - A",
+            "latitude": "-7.745352538417359",
+            "longitude": "110.3888740512006"
+        },
+        {
+            "name": "Pasar Kolombo - B",
+            "latitude": "-7.744656028402487",
+            "longitude": "110.389318375338"
+        },
+        {
+            "name": "Pasar Kranggan Selatan",
+            "latitude": "-7.782844613090249",
+            "longitude": "110.3656590840098"
+        },
+        {
+            "name": "Pasar Kranggan Timur",
+            "latitude": "-7.781839211865046",
+            "longitude": "110.3672353825117"
+        },
+        {
+            "name": "Pasar Legi - A",
+            "latitude": "-7.809109251392019",
+            "longitude": "110.3500944342046"
+        },
+        {
+            "name": "Pasar Legi - B",
+            "latitude": "-7.810945992060516",
+            "longitude": "110.3496517637248"
+        },
+        {
+            "name": "Pasar Niten - A",
+            "latitude": "-7.83879224349355",
+            "longitude": "110.3505260933048"
+        },
+        {
+            "name": "Pasar Niten - B",
+            "latitude": "-7.838112682403064",
+            "longitude": "110.3511788414278"
+        },
+        {
+            "name": "Pasar Pathuk",
+            "latitude": "-7.795993672123294",
+            "longitude": "110.3618655747614"
+        },
+        {
+            "name": "Pasar Sepeda",
+            "latitude": "-7.816357807274519",
+            "longitude": "110.3803637113587"
+        },
+        {
+            "name": "Pasar Serangan",
+            "latitude": "-7.801111759921649",
+            "longitude": "110.3542346322114"
+        },
+        {
+            "name": "Pasar Telo - A",
+            "latitude": "-7.824382162109216",
+            "longitude": "110.373323737572"
+        },
+        {
+            "name": "Pasar Telo - B",
+            "latitude": "-7.825691950199362",
+            "longitude": "110.373470218022"
+        },
+        {
+            "name": "Pasar Tlogorejo - A",
+            "latitude": "-7.778808171827207",
+            "longitude": "110.3394713379748"
+        },
+        {
+            "name": "Pasar Tlogorejo - B",
+            "latitude": "-7.778811794627627",
+            "longitude": "110.3393259417492"
+        },
+        {
+            "name": "Pasty - A",
+            "latitude": "-7.825688794375914",
+            "longitude": "110.3544825202199"
+        },
+        {
+            "name": "Pasty - B",
+            "latitude": "-7.825766856824115",
+            "longitude": "110.3545048004507"
+        },
+        {
+            "name": "PDAM Monjali",
+            "latitude": "-7.756020197773157",
+            "longitude": "110.3699045386851"
+        },
+        {
+            "name": "Pegadaian",
+            "latitude": "-7.822774450121305",
+            "longitude": "110.4001744784073"
+        },
+        {
+            "name": "Pelem Gurih - A",
+            "latitude": "-7.799896339490843",
+            "longitude": "110.3306158517516"
+        },
+        {
+            "name": "Pelem Gurih - B",
+            "latitude": "-7.799983199886683",
+            "longitude": "110.330738481739"
+        },
+        {
+            "name": "Perintis Kemerdekaan - A",
+            "latitude": "-7.818329470092474",
+            "longitude": "110.392282967376"
+        },
+        {
+            "name": "Perintis Kemerdekaan - B",
+            "latitude": "-7.818310838385391",
+            "longitude": "110.3919318801638"
+        },
+        {
+            "name": "Perpusda",
+            "latitude": "-7.788091536643673",
+            "longitude": "110.357904556994"
+        },
+        {
+            "name": "Perumahan Nogotirto",
+            "latitude": "-7.763688657211908",
+            "longitude": "110.3361551718011"
+        },
+        {
+            "name": "Pilar",
+            "latitude": "-7.813484387344343",
+            "longitude": "110.4020836612946"
+        },
+        {
+            "name": "PKU Gamping",
+            "latitude": "-7.801880444939693",
+            "longitude": "110.3167896535923"
+        },
+        {
+            "name": "Plaza UNY",
+            "latitude": "-7.775144175298891",
+            "longitude": "110.3891395954075"
+        },
+        {
+            "name": "Plengkung Gading - A",
+            "latitude": "-7.814170758045029",
+            "longitude": "110.3639008033919"
+        },
+        {
+            "name": "Plengkung Gading - B",
+            "latitude": "-7.814256387715714",
+            "longitude": "110.3643071384592"
+        },
+        {
+            "name": "Polres Bantul",
+            "latitude": "-7.889804834058768",
+            "longitude": "110.32651213147"
+        },
+        {
+            "name": "Polsek Bulaksumur - A",
+            "latitude": "-7.770708314473608",
+            "longitude": "110.3863952673741"
+        },
+        {
+            "name": "Polsek Bulaksumur - B",
+            "latitude": "-7.77039339350847",
+            "longitude": "110.3855321096924"
+        },
+        {
+            "name": "Polsek Depok Timur - A",
+            "latitude": "-7.762567205996049",
+            "longitude": "110.4155068545073"
+        },
+        {
+            "name": "Polsek Depok Timur - B",
+            "latitude": "-7.762393928932646",
+            "longitude": "110.4152581522498"
+        },
+        {
+            "name": "Polsek Godean - A",
+            "latitude": "-7.7715614887312",
+            "longitude": "110.3090699496543"
+        },
+        {
+            "name": "Polsek Godean - B",
+            "latitude": "-7.771609063651442",
+            "longitude": "110.3090063932374"
+        },
+        {
+            "name": "Poltekkes BSI",
+            "latitude": "-7.814372777791874",
+            "longitude": "110.4021143399472"
+        },
+        {
+            "name": "Pramuka",
+            "latitude": "-7.818517501188299",
+            "longitude": "110.3873740723351"
+        },
+        {
+            "name": "Prayan - A",
+            "latitude": "-7.763473236623564",
+            "longitude": "110.3935849930547"
+        },
+        {
+            "name": "Prayan - B",
+            "latitude": "-7.763575715026603",
+            "longitude": "110.39363666393"
+        },
+        {
+            "name": "Pujokusuman",
+            "latitude": "-7.81482094429242",
+            "longitude": "110.3700600583808"
+        },
+        {
+            "name": "Purawisata - A",
+            "latitude": "-7.808770024847878",
+            "longitude": "110.3691291915494"
+        },
+        {
+            "name": "Purawisata - B",
+            "latitude": "-7.808121798051421",
+            "longitude": "110.3691000259677"
+        },
+        {
+            "name": "Pusat Kuliner Belut Godean",
+            "latitude": "-7.767617777639396",
+            "longitude": "110.2935158686587"
+        },
+        {
+            "name": "Puskesmas Ngaglik - A",
+            "latitude": "-7.721894346544502",
+            "longitude": "110.4025564989143"
+        },
+        {
+            "name": "Puskesmas Ngaglik - B",
+            "latitude": "-7.722027942909403",
+            "longitude": "110.4025234468583"
+        },
+        {
+            "name": "Puskesmas Ngemplak - A",
+            "latitude": "-7.702928348246792",
+            "longitude": "110.4446782183275"
+        },
+        {
+            "name": "Puskesmas Ngemplak - B",
+            "latitude": "-7.702950977865044",
+            "longitude": "110.4445446069668"
+        },
+        {
+            "name": "Raminten - A",
+            "latitude": "-7.675976456338613",
+            "longitude": "110.4172606210448"
+        },
+        {
+            "name": "Raminten - B",
+            "latitude": "-7.676149992187693",
+            "longitude": "110.4173087469003"
+        },
+        {
+            "name": "RS Bethesda",
+            "latitude": "-7.783037414855128",
+            "longitude": "110.3780171349039"
+        },
+        {
+            "name": "RS Bhayangkara - A",
+            "latitude": "-7.767202109813594",
+            "longitude": "110.4715101483841"
+        },
+        {
+            "name": "RS Bhayangkara - B",
+            "latitude": "-7.766719152163888",
+            "longitude": "110.4717427242931"
+        },
+        {
+            "name": "RS Harjolukito",
+            "latitude": "-7.797367116224272",
+            "longitude": "110.4100197731293"
+        },
+        {
+            "name": "RS Hidayatullah",
+            "latitude": "-7.815604415503537",
+            "longitude": "110.3877931456585"
+        },
+        {
+            "name": "RS JIH",
+            "latitude": "-7.758875237625109",
+            "longitude": "110.4030753211329"
+        },
+        {
+            "name": "RS Kemasan - A",
+            "latitude": "-7.713281493600709",
+            "longitude": "110.4480420112885"
+        },
+        {
+            "name": "RS Kemasan - B",
+            "latitude": "-7.713733473703374",
+            "longitude": "110.4477973274003"
+        },
+        {
+            "name": "RS Panti Nugroho",
+            "latitude": "-7.669267095042257",
+            "longitude": "110.4175942250532"
+        },
+        {
+            "name": "RS Panti Rapih",
+            "latitude": "-7.777807424326472",
+            "longitude": "110.3758496606723"
+        },
+        {
+            "name": "RS Queen Latifa",
+            "latitude": "-7.763117060478833",
+            "longitude": "110.3363548923545"
+        },
+        {
+            "name": "RS Sardjito - A",
+            "latitude": "-7.767816575507493",
+            "longitude": "110.3742760299436"
+        },
+        {
+            "name": "RS Sardjito - B",
+            "latitude": "-7.76781107251559",
+            "longitude": "110.3742126499926"
+        },
+        {
+            "name": "RSU Gramedika - A",
+            "latitude": "-7.701130486862302",
+            "longitude": "110.4169871378792"
+        },
+        {
+            "name": "RSU Gramedika - B",
+            "latitude": "-7.701091990283262",
+            "longitude": "110.4169917071014"
+        },
+        {
+            "name": "Ruba Graha - A",
+            "latitude": "-7.82088277753869",
+            "longitude": "110.3619944762736"
+        },
+        {
+            "name": "Ruba Graha - B",
+            "latitude": "-7.820889626369614",
+            "longitude": "110.362233190999"
+        },
+        {
+            "name": "Sahid J-Walk",
+            "latitude": "-7.779567368093718",
+            "longitude": "110.4146968729381"
+        },
+        {
+            "name": "Samirono",
+            "latitude": "-7.777645787380349",
+            "longitude": "110.3875120955457"
+        },
+        {
+            "name": "Samsat",
+            "latitude": "-7.787165362984191",
+            "longitude": "110.3597639185613"
+        },
+        {
+            "name": "Sanata Dharma",
+            "latitude": "-7.775083177933594",
+            "longitude": "110.3892487625296"
+        },
+        {
+            "name": "Santren",
+            "latitude": "-7.76637351773005",
+            "longitude": "110.3919758018254"
+        },
+        {
+            "name": "SD Unggulan Aisyiyah - A",
+            "latitude": "-7.895077169182271",
+            "longitude": "110.3240037774809"
+        },
+        {
+            "name": "SD Unggulan Aisyiyah - B",
+            "latitude": "-7.895168848171398",
+            "longitude": "110.3240341981719"
+        },
+        {
+            "name": "SDN 1 Demak Ijo - A",
+            "latitude": "-7.778220975001721",
+            "longitude": "110.3368091099371"
+        },
+        {
+            "name": "SDN 1 Demak Ijo - B",
+            "latitude": "-7.778267109441066",
+            "longitude": "110.3367634253705"
+        },
+        {
+            "name": "SDN 1 Depok - A",
+            "latitude": "-7.760761065826374",
+            "longitude": "110.4329201149669"
+        },
+        {
+            "name": "SDN 1 Depok - B",
+            "latitude": "-7.76091358240627",
+            "longitude": "110.4329445866165"
+        },
+        {
+            "name": "SDN Kintelan 1",
+            "latitude": "-7.812054890099113",
+            "longitude": "110.3689009993402"
+        },
+        {
+            "name": "SDN Percobaan 3 Pakem",
+            "latitude": "-7.668404040378884",
+            "longitude": "110.4176957338322"
+        },
+        {
+            "name": "SDN Selomulyo - A",
+            "latitude": "-7.702391457568187",
+            "longitude": "110.4207157147473"
+        },
+        {
+            "name": "SDN Selomulyo - B",
+            "latitude": "-7.702235867515061",
+            "longitude": "110.4204487046434"
+        },
+        {
+            "name": "Selokan Mataram Maguwo",
+            "latitude": "-7.770960006365275",
+            "longitude": "110.4310434801925"
+        },
+        {
+            "name": "Senopati",
+            "latitude": "-7.801501472855679",
+            "longitude": "110.3670384717016"
+        },
+        {
+            "name": "SGM Kusumanegara - A",
+            "latitude": "-7.802084147495457",
+            "longitude": "110.3930308486896"
+        },
+        {
+            "name": "SGM Kusumanegara - B",
+            "latitude": "-7.802161927973887",
+            "longitude": "110.3933762444618"
+        },
+        {
+            "name": "Simpang Babadan - A",
+            "latitude": "-7.723146085678115",
+            "longitude": "110.4354694960238"
+        },
+        {
+            "name": "Simpang Babadan - B",
+            "latitude": "-7.723286453110126",
+            "longitude": "110.4354358491434"
+        },
+        {
+            "name": "Simpang Bantulan - A",
+            "latitude": "-7.774801532929",
+            "longitude": "110.3222989026215"
+        },
+        {
+            "name": "Simpang Bantulan - B",
+            "latitude": "-7.774890778293687",
+            "longitude": "110.3224405212454"
+        },
+        {
+            "name": "Simpang Besi Jakal - A",
+            "latitude": "-7.70021012336186",
+            "longitude": "110.4153884203116"
+        },
+        {
+            "name": "Simpang Besi Jakal - B",
+            "latitude": "-7.700218051229169",
+            "longitude": "110.4154444404505"
+        },
+        {
+            "name": "Simpang Degolan - A",
+            "latitude": "-7.684066784093043",
+            "longitude": "110.4191706854421"
+        },
+        {
+            "name": "Simpang Degolan - B",
+            "latitude": "-7.684105202587231",
+            "longitude": "110.4192060852389"
+        },
+        {
+            "name": "Simpang Diklat DIY - A",
+            "latitude": "-7.828796516594528",
+            "longitude": "110.3325035330139"
+        },
+        {
+            "name": "Simpang Diklat DIY - B",
+            "latitude": "-7.82855486963864",
+            "longitude": "110.3316303526468"
+        },
+        {
+            "name": "Simpang Gesikan - A",
+            "latitude": "-7.773567270418229",
+            "longitude": "110.3164463226544"
+        },
+        {
+            "name": "Simpang Gesikan - B",
+            "latitude": "-7.77366411578428",
+            "longitude": "110.3165601183656"
+        },
+        {
+            "name": "Simpang Gose - A",
+            "latitude": "-7.891817529296757",
+            "longitude": "110.3253880082239"
+        },
+        {
+            "name": "Simpang Gose - B",
+            "latitude": "-7.891925906236317",
+            "longitude": "110.3254443276462"
+        },
+        {
+            "name": "Simpang Kabunan - A",
+            "latitude": "-7.718590124094006",
+            "longitude": "110.4385591460817"
+        },
+        {
+            "name": "Simpang Kabunan - B",
+            "latitude": "-7.719497122714234",
+            "longitude": "110.4382319760481"
+        },
+        {
+            "name": "Simpang Kasongan - A",
+            "latitude": "-7.846332492824665",
+            "longitude": "110.3445390238194"
+        },
+        {
+            "name": "Simpang Kasongan - B",
+            "latitude": "-7.848623835266702",
+            "longitude": "110.3434778924326"
+        },
+        {
+            "name": "Simpang Kenti - A",
+            "latitude": "-7.703531267870759",
+            "longitude": "110.4480791540487"
+        },
+        {
+            "name": "Simpang Kenti - B",
+            "latitude": "-7.703513423606279",
+            "longitude": "110.4481063550098"
+        },
+        {
+            "name": "Simpang Losari (Cozy) - A",
+            "latitude": "-7.704851279442943",
+            "longitude": "110.4330055169358"
+        },
+        {
+            "name": "Simpang Losari (Cozy) - B",
+            "latitude": "-7.704803679896029",
+            "longitude": "110.4331447380306"
+        },
+        {
+            "name": "Simpang Mandungan (Iwak Kalen) - A",
+            "latitude": "-7.770048685164736",
+            "longitude": "110.3030152189386"
+        },
+        {
+            "name": "Simpang Mandungan (Iwak Kalen) - B",
+            "latitude": "-7.770103497676",
+            "longitude": "110.3029997080424"
+        },
+        {
+            "name": "Simpang Munggur - A",
+            "latitude": "-7.773939641507209",
+            "longitude": "110.3183547373539"
+        },
+        {
+            "name": "Simpang Munggur - B",
+            "latitude": "-7.773980316132013",
+            "longitude": "110.318286605694"
+        },
+        {
+            "name": "Simpang Palem Raya - A",
+            "latitude": "-7.730553485564662",
+            "longitude": "110.3975609023599"
+        },
+        {
+            "name": "Simpang Palem Raya - B",
+            "latitude": "-7.730432879047894",
+            "longitude": "110.397674916259"
+        },
+        {
+            "name": "Simpang Selomartani - A",
+            "latitude": "-7.722327713924585",
+            "longitude": "110.438107396498"
+        },
+        {
+            "name": "Simpang Selomartani - B",
+            "latitude": "-7.722392677764742",
+            "longitude": "110.4379742732518"
+        },
+        {
+            "name": "Simpang Wojo",
+            "latitude": "-7.836372311507519",
+            "longitude": "110.3737759531005"
+        },
+        {
+            "name": "SMAN 5",
+            "latitude": "-7.822557280334142",
+            "longitude": "110.3991576484135"
+        },
+        {
+            "name": "SMAN 1 - A",
+            "latitude": "-7.799352641178005",
+            "longitude": "110.3521168618004"
+        },
+        {
+            "name": "SMAN 1 - B",
+            "latitude": "-7.799113136505353",
+            "longitude": "110.3522280794382"
+        },
+        {
+            "name": "SMAN 1 Bantul - A",
+            "latitude": "-7.897380540828093",
+            "longitude": "110.3230242175021"
+        },
+        {
+            "name": "SMAN 1 Bantul - B",
+            "latitude": "-7.898173216294217",
+            "longitude": "110.3227402895135"
+        },
+        {
+            "name": "SMAN 2 Ngaglik - A",
+            "latitude": "-7.704858387966248",
+            "longitude": "110.4350102560816"
+        },
+        {
+            "name": "SMAN 2 Ngaglik - B",
+            "latitude": "-7.704814314576431",
+            "longitude": "110.4349897624301"
+        },
+        {
+            "name": "SMAN 7",
+            "latitude": "-7.813417495210094",
+            "longitude": "110.358130788019"
+        },
+        {
+            "name": "SMK Muh 3",
+            "latitude": "-7.822555603394401",
+            "longitude": "110.3896637525958"
+        },
+        {
+            "name": "SMK Seni - A",
+            "latitude": "-7.814457254982957",
+            "longitude": "110.3489904145418"
+        },
+        {
+            "name": "SMK Seni - B",
+            "latitude": "-7.815334870217849",
+            "longitude": "110.3487787245116"
+        },
+        {
+            "name": "SMKN 1 Depok - Jl. Raya Tajem - A",
+            "latitude": "-7.765242478606591",
+            "longitude": "110.4314847464773"
+        },
+        {
+            "name": "SMKN 1 Depok - Jl. Raya Tajem - B",
+            "latitude": "-7.765254062079497",
+            "longitude": "110.4315564263179"
+        },
+        {
+            "name": "SMKN 1 Depok - Ring Road Utara",
+            "latitude": "-7.7664832692276",
+            "longitude": "110.4311030123088"
+        },
+        {
+            "name": "SMKN 3",
+            "latitude": "-7.77797882035933",
+            "longitude": "110.3668284308403"
+        },
+        {
+            "name": "SMKN 5 - A",
+            "latitude": "-7.800356657469172",
+            "longitude": "110.3950630268698"
+        },
+        {
+            "name": "SMKN 5 - B",
+            "latitude": "-7.800243461679522",
+            "longitude": "110.3945102952578"
+        },
+        {
+            "name": "SMP Kanisius Gayam - A",
+            "latitude": "-7.795822038771775",
+            "longitude": "110.3777489930127"
+        },
+        {
+            "name": "SMP Kanisius Gayam - B",
+            "latitude": "-7.795696560817533",
+            "longitude": "110.3777844577984"
+        },
+        {
+            "name": "SMP Muh 3 - A",
+            "latitude": "-7.802915646365857",
+            "longitude": "110.3514020068731"
+        },
+        {
+            "name": "SMP Muh 3 - B",
+            "latitude": "-7.806729532514925",
+            "longitude": "110.3505388518733"
+        },
+        {
+            "name": "SMPN 1",
+            "latitude": "-7.77746825657524",
+            "longitude": "110.3758107782883"
+        },
+        {
+            "name": "SMPN 11 - A",
+            "latitude": "-7.792972820038118",
+            "longitude": "110.3534011677075"
+        },
+        {
+            "name": "SMPN 11 - B",
+            "latitude": "-7.792509601874538",
+            "longitude": "110.3535605296242"
+        },
+        {
+            "name": "SMPN 14",
+            "latitude": "-7.786576475014896",
+            "longitude": "110.359986986541"
+        },
+        {
+            "name": "SMPN 2 Bantul",
+            "latitude": "-7.874908182520206",
+            "longitude": "110.3357432343284"
+        },
+        {
+            "name": "SMPN 2 Ngaglik - A",
+            "latitude": "-7.715822541565503",
+            "longitude": "110.4060399386978"
+        },
+        {
+            "name": "SMPN 2 Ngaglik - B",
+            "latitude": "-7.715972044964515",
+            "longitude": "110.406006264246"
+        },
+        {
+            "name": "SMPN 4 Pakem",
+            "latitude": "-7.669214695216644",
+            "longitude": "110.4176423080247"
+        },
+        {
+            "name": "SMPN 6",
+            "latitude": "-7.778078608918588",
+            "longitude": "110.3669928781661"
+        },
+        {
+            "name": "SMPN 9 - A",
+            "latitude": "-7.819796148029234",
+            "longitude": "110.3980232157629"
+        },
+        {
+            "name": "SMPN 9 - B",
+            "latitude": "-7.819851176854526",
+            "longitude": "110.3980308226864"
+        },
+        {
+            "name": "Sorogenen, Nitikan",
+            "latitude": "-7.824797204452564",
+            "longitude": "110.3799829490513"
+        },
+        {
+            "name": "Sosrowijayan",
+            "latitude": "-7.79206983246784",
+            "longitude": "110.3616177790528"
+        },
+        {
+            "name": "SPBU Concat - A",
+            "latitude": "-7.759984739990121",
+            "longitude": "110.3949352177448"
+        },
+        {
+            "name": "SPBU Concat - B",
+            "latitude": "-7.759676503001439",
+            "longitude": "110.3952009094582"
+        },
+        {
+            "name": "SPBU Dukuh - A",
+            "latitude": "-7.821685761741659",
+            "longitude": "110.355174031219"
+        },
+        {
+            "name": "SPBU Dukuh - B",
+            "latitude": "-7.820927470530465",
+            "longitude": "110.3553380854301"
+        },
+        {
+            "name": "SPBU Kaliurang - A",
+            "latitude": "-7.710842511832179",
+            "longitude": "110.4089058417969"
+        },
+        {
+            "name": "SPBU Kaliurang - B",
+            "latitude": "-7.710957458852091",
+            "longitude": "110.4088862409631"
+        },
+        {
+            "name": "SPBU Mindi - A",
+            "latitude": "-7.704862142624995",
+            "longitude": "110.4310289641562"
+        },
+        {
+            "name": "SPBU Mindi - B",
+            "latitude": "-7.704812633360296",
+            "longitude": "110.4311685991025"
+        },
+        {
+            "name": "Stasiun Lempuyangan",
+            "latitude": "-7.790245873823342",
+            "longitude": "110.3773916056015"
+        },
+        {
+            "name": "Stasiun Yogyakarta",
+            "latitude": "-7.789651286974949",
+            "longitude": "110.3617238618521"
+        },
+        {
+            "name": "STIE Kerjasama",
+            "latitude": "-7.816663310276892",
+            "longitude": "110.3828532386184"
+        },
+        {
+            "name": "STIE YKPN - A",
+            "latitude": "-7.767022618997038",
+            "longitude": "110.4104129871966"
+        },
+        {
+            "name": "STIE YKPN - B",
+            "latitude": "-7.768444756188056",
+            "longitude": "110.4101420111903"
+        },
+        {
+            "name": "Stikes Guna Bangsa",
+            "latitude": "-7.760771757998816",
+            "longitude": "110.4089571585347"
+        },
+        {
+            "name": "STSRD Visi Tamansiswa",
+            "latitude": "-7.813706715184773",
+            "longitude": "110.3765364687939"
+        },
+        {
+            "name": "Superindo Jakal - A",
+            "latitude": "-7.752579012350325",
+            "longitude": "110.3846440449576"
+        },
+        {
+            "name": "Superindo Jakal - B",
+            "latitude": "-7.752640886726637",
+            "longitude": "110.3846532248585"
+        },
+        {
+            "name": "Superindo Urip Sumoharjo",
+            "latitude": "-7.783093866456439",
+            "longitude": "110.3823328991022"
+        },
+        {
+            "name": "Suryotomo",
+            "latitude": "-7.799273487951733",
+            "longitude": "110.3693373157747"
+        },
+        {
+            "name": "Susteran Novisiat",
+            "latitude": "-7.766130424502836",
+            "longitude": "110.3921535801001"
+        },
+        {
+            "name": "Taman Makam Pahlawan - A",
+            "latitude": "-7.801839733581503",
+            "longitude": "110.3834712530418"
+        },
+        {
+            "name": "Taman Makam Pahlawan - B",
+            "latitude": "-7.801842809014827",
+            "longitude": "110.3821528421634"
+        },
+        {
+            "name": "Taman Pintar",
+            "latitude": "-7.801415825155418",
+            "longitude": "110.3671524536062"
+        },
+        {
+            "name": "Tamansari",
+            "latitude": "-7.809838273228094",
+            "longitude": "110.3560081067103"
+        },
+        {
+            "name": "Tamantirto - A",
+            "latitude": "-7.814469384219196",
+            "longitude": "110.3242898380854"
+        },
+        {
+            "name": "Tamantirto - B",
+            "latitude": "-7.816042235895667",
+            "longitude": "110.3242712977426"
+        },
+        {
+            "name": "Tarumartani - A",
+            "latitude": "-7.790500505753522",
+            "longitude": "110.3819878351158"
+        },
+        {
+            "name": "Tarumartani - B",
+            "latitude": "-7.790535480089892",
+            "longitude": "110.3819975843604"
+        },
+        {
+            "name": "Tegal Gendu - A",
+            "latitude": "-7.826047423135612",
+            "longitude": "110.3917630310978"
+        },
+        {
+            "name": "Tegal Gendu - B",
+            "latitude": "-7.825849225389784",
+            "longitude": "110.3913650587245"
+        },
+        {
+            "name": "Tegal Turi - A",
+            "latitude": "-7.825393840247827",
+            "longitude": "110.3870967695946"
+        },
+        {
+            "name": "Tegal Turi - B",
+            "latitude": "-7.825416508908944",
+            "longitude": "110.3869333837433"
+        },
+        {
+            "name": "Tejokusuman",
+            "latitude": "-7.807916217091707",
+            "longitude": "110.356010947825"
+        },
+        {
+            "name": "Teknik UGM - A",
+            "latitude": "-7.764241017350616",
+            "longitude": "110.3746253393848"
+        },
+        {
+            "name": "Teknik UGM - B",
+            "latitude": "-7.76411791942433",
+            "longitude": "110.37470363415"
+        },
+        {
+            "name": "Teras 2",
+            "latitude": "-7.791787944130831",
+            "longitude": "110.3675861624545"
+        },
+        {
+            "name": "Terminal Condongcatur",
+            "latitude": "-7.756625387337273",
+            "longitude": "110.3958746295575"
+        },
+        {
+            "name": "Terminal Giwangan",
+            "latitude": "-7.834176034325677",
+            "longitude": "110.3918348645718"
+        },
+        {
+            "name": "Terminal Jombor",
+            "latitude": "-7.747404566274295",
+            "longitude": "110.3612381772213"
+        },
+        {
+            "name": "Terminal Pakem",
+            "latitude": "-7.666864975262388",
+            "longitude": "110.4199875071032"
+        },
+        {
+            "name": "Terminal Palbapang",
+            "latitude": "-7.905321738212967",
+            "longitude": "110.318426054645"
+        },
+        {
+            "name": "Terminal Prambanan",
+            "latitude": "-7.755659070882549",
+            "longitude": "110.4898166850102"
+        },
+        {
+            "name": "Timur Jembatan Yapah - A",
+            "latitude": "-7.705049136345315",
+            "longitude": "110.4391902278364"
+        },
+        {
+            "name": "Timur Jembatan Yapah - B",
+            "latitude": "-7.705017820433222",
+            "longitude": "110.4393021668427"
+        },
+        {
+            "name": "TK BIAS",
+            "latitude": "-7.724227232336171",
+            "longitude": "110.4012513972284"
+        },
+        {
+            "name": "TNI AL - A",
+            "latitude": "-7.792318749527062",
+            "longitude": "110.3909492916522"
+        },
+        {
+            "name": "TNI AL - B",
+            "latitude": "-7.792567174640919",
+            "longitude": "110.392338778849"
+        },
+        {
+            "name": "Toko Saerah - A",
+            "latitude": "-7.77617875244666",
+            "longitude": "110.3277858994457"
+        },
+        {
+            "name": "Toko Saerah - B",
+            "latitude": "-7.77626622344355",
+            "longitude": "110.3278646033757"
+        },
+        {
+            "name": "Transmart",
+            "latitude": "-7.783291312210946",
+            "longitude": "110.420174346762"
+        },
+        {
+            "name": "Tugu Adipura",
+            "latitude": "-7.889220503047498",
+            "longitude": "110.3270383565022"
+        },
+        {
+            "name": "Tugu Batas Desa Yapah - A",
+            "latitude": "-7.70380308354859",
+            "longitude": "110.4426138191061"
+        },
+        {
+            "name": "Tugu Batas Desa Yapah - B",
+            "latitude": "-7.703740344293108",
+            "longitude": "110.4426491262896"
+        },
+        {
+            "name": "TVRI - A",
+            "latitude": "-7.765273190143478",
+            "longitude": "110.3616492287682"
+        },
+        {
+            "name": "TVRI - B",
+            "latitude": "-7.765400552148097",
+            "longitude": "110.3615931391956"
+        },
+        {
+            "name": "UAD Jl. Pramuka",
+            "latitude": "-7.820566931868768",
+            "longitude": "110.3885873141951"
+        },
+        {
+            "name": "UAD Ring Road Selatan - A",
+            "latitude": "-7.835133858612502",
+            "longitude": "110.382909533974"
+        },
+        {
+            "name": "UAD Ring Road Selatan - B",
+            "latitude": "-7.834920862197136",
+            "longitude": "110.3832683760298"
+        },
+        {
+            "name": "UII (Barat Jalan)",
+            "latitude": "-7.687324092885454",
+            "longitude": "110.4187784889417"
+        },
+        {
+            "name": "UII (Timur Jalan)",
+            "latitude": "-7.68778022910464",
+            "longitude": "110.4188049726004"
+        },
+        {
+            "name": "UIN Sunan Kalijaga - A",
+            "latitude": "-7.786192339711496",
+            "longitude": "110.394844163739"
+        },
+        {
+            "name": "UIN Sunan Kalijaga - B",
+            "latitude": "-7.785906931283739",
+            "longitude": "110.3947836367228"
+        },
+        {
+            "name": "UKDW",
+            "latitude": "-7.78552369956898",
+            "longitude": "110.3788426606391"
+        },
+        {
+            "name": "UMY - A",
+            "latitude": "-7.810704007143188",
+            "longitude": "110.3245094618098"
+        },
+        {
+            "name": "UMY - B",
+            "latitude": "-7.810898728167055",
+            "longitude": "110.324572015843"
+        },
+        {
+            "name": "Universitas Aisyiyah",
+            "latitude": "-7.768221277656972",
+            "longitude": "110.3345357640194"
+        },
+        {
+            "name": "Universitas Alma Ata",
+            "latitude": "-7.818407843290539",
+            "longitude": "110.3241308621528"
+        },
+        {
+            "name": "Universitas BSI - A",
+            "latitude": "-7.802699498985995",
+            "longitude": "110.3251809672964"
+        },
+        {
+            "name": "Universitas BSI - B",
+            "latitude": "-7.802875148950538",
+            "longitude": "110.3252648399789"
+        },
+        {
+            "name": "UNRIYO - A",
+            "latitude": "-7.746329663585771",
+            "longitude": "110.4341672710547"
+        },
+        {
+            "name": "UNRIYO - B",
+            "latitude": "-7.746300698222553",
+            "longitude": "110.4342159532933"
+        },
+        {
+            "name": "UNU",
+            "latitude": "-7.819766626309702",
+            "longitude": "110.3764552194186"
+        },
+        {
+            "name": "UNY Colombo",
+            "latitude": "-7.777757135342892",
+            "longitude": "110.3866889214985"
+        },
+        {
+            "name": "UPN Veteran",
+            "latitude": "-7.760641215434024",
+            "longitude": "110.4081325027262"
+        },
+        {
+            "name": "UTY Glagahsari - A",
+            "latitude": "-7.805532725735606",
+            "longitude": "110.3884384227915"
+        },
+        {
+            "name": "UTY Glagahsari - B",
+            "latitude": "-7.804194546554199",
+            "longitude": "110.3887582551324"
+        },
+        {
+            "name": "UTY Ring Road Utara - A",
+            "latitude": "-7.747256630793209",
+            "longitude": "110.3565749946871"
+        },
+        {
+            "name": "UTY Ring Road Utara - B",
+            "latitude": "-7.747158420551925",
+            "longitude": "110.3565163904763"
+        },
+        {
+            "name": "Veteran",
+            "latitude": "-7.815227907596645",
+            "longitude": "110.3891386823229"
+        },
+        {
+            "name": "Vokasi UGM",
+            "latitude": "-7.774524597361829",
+            "longitude": "110.3749770978658"
+        },
+        {
+            "name": "Wedangan Kampoeng - A",
+            "latitude": "-7.702735880752195",
+            "longitude": "110.4135812889479"
+        },
+        {
+            "name": "Wedangan Kampoeng - B",
+            "latitude": "-7.702815706551203",
+            "longitude": "110.4135715708094"
+        },
+        {
+            "name": "Westlake - A",
+            "latitude": "-7.74923653170918",
+            "longitude": "110.3411115018298"
+        },
+        {
+            "name": "Westlake - B",
+            "latitude": "-7.749627055053841",
+            "longitude": "110.3408302010766"
+        },
+        {
+            "name": "Widya Wiwaha - A",
+            "latitude": "-7.822717490107339",
+            "longitude": "110.3776245658792"
+        },
+        {
+            "name": "Widya Wiwaha - B",
+            "latitude": "-7.822605924820063",
+            "longitude": "110.3775414491984"
+        },
+        {
+            "name": "Wirosaban",
+            "latitude": "-7.824775945025207",
+            "longitude": "110.3792472299712"
+        },
+        {
+            "name": "Wonocatur",
+            "latitude": "-7.798619330916658",
+            "longitude": "110.406404670422"
+        },
+        {
+            "name": "XT Square",
+            "latitude": "-7.816230144846303",
+            "longitude": "110.3859733513269"
+        },
+        {
+            "name": "YAKKUM - A",
+            "latitude": "-7.69559246380335",
+            "longitude": "110.4180166251701"
+        },
+        {
+            "name": "YAKKUM - B",
+            "latitude": "-7.695488672709777",
+            "longitude": "110.4181211266971"
+        }
+    ]
+}
