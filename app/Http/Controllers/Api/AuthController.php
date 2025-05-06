@@ -490,4 +490,83 @@ class AuthController extends Controller
             ->where('token', $request->reset_token)->delete();
         return ResponseHelper::send('Password change success', null, 200);
     }
+    /**
+     * @OA\Put(
+     *     path="/password",
+     *     summary="Change user's password",
+     *     tags={"Profile"},
+     *     security={{"bearerAuth":{}}},
+     *     @OA\RequestBody(
+     *         required=true,
+     *         @OA\JsonContent(
+     *             required={"old_password","password"},
+     *             @OA\Property(property="old_password", type="string", format="password", example="newStrongPassword123"),
+     *             @OA\Property(property="password", type="string", format="password", example="newStrongPassword123"),
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="Password change success",
+     *         @OA\JsonContent(
+     *             @OA\Property(property="success", type="boolean", example=true),
+     *             @OA\Property(property="code", type="integer", example=200),
+     *             @OA\Property(property="message", type="string", example="Password change success"),
+     *             @OA\Property(property="data", type="object", nullable=true)
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=400,
+     *         description="Validation Error",
+     *         @OA\JsonContent(
+     *             @OA\Property(property="success", type="boolean", example=false),
+     *             @OA\Property(property="code", type="integer", example=400),
+     *             @OA\Property(property="message", type="string", example="Your input is invalid"),
+     *             @OA\Property(
+     *                 property="data",
+     *                 type="object",
+     *                 example={"password": {"The password field is required."}}
+     *             )
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=404,
+     *         description="Password change failed (invalid token or user)",
+     *         @OA\JsonContent(
+     *             @OA\Property(property="success", type="boolean", example=false),
+     *             @OA\Property(property="code", type="integer", example=404),
+     *             @OA\Property(property="message", type="string", example="Password change failed"),
+     *             @OA\Property(property="data", type="object", nullable=true)
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=500,
+     *         description="Internal server error",
+     *         @OA\JsonContent(
+     *             @OA\Property(property="success", type="boolean", example=false),
+     *             @OA\Property(property="code", type="integer", example=500),
+     *             @OA\Property(property="message", type="string", example="Something went wrong"),
+     *             @OA\Property(property="data", type="object", nullable=true)
+     *         )
+     *     )
+     * )
+     */
+    public function changePassword(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'old_password' => ['required'],
+            'password' => ['required'],
+        ]);
+
+        if ($validator->fails()) {
+            return ResponseHelper::send('Your input is invalid', $validator->messages(), 400);
+        }
+        $user = User::find(Auth::user()->id);
+        if (Hash::check($request->old_password, $user->password)) {
+            $user->password = Hash::make($request->password);
+            $user->save();
+            return ResponseHelper::send('Password change success', null, 200);
+        } else {
+            return ResponseHelper::send('Password change failed, old password incorrect', null, 403);
+        }
+    }
 }

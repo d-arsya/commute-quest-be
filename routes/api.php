@@ -30,6 +30,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::controller(AuthController::class)->group(function () {
         Route::get('profile', 'profile');
         Route::put('profile', 'profileUpdate');
+        Route::put('password', 'changePassword');
     });
     Route::controller(ChatController::class)->group(function () {
         Route::post('chat', 'chatRequest');
