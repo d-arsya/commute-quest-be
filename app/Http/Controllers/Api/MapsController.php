@@ -52,7 +52,7 @@ class MapsController extends Controller
      *                         @OA\Property(property="updated_at", type="string", format="date-time", example="2025-05-09 15:40:34"),
      *                         @OA\Property(property="distance", type="integer", example=724),
      *                         @OA\Property(
-     *                             property="polyline",
+     *                             property="coords",
      *                             type="array",
      *                             @OA\Items(
      *                                 type="array",
