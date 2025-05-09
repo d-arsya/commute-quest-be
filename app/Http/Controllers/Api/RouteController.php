@@ -257,7 +257,6 @@ class RouteController extends Controller
             return "Masukkan prompt";
         }
         $res = $this->getRoute($text);
-        dd($res);
     }
     private function cekLocation($text)
     {

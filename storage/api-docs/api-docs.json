@@ -1264,6 +1264,176 @@
                 ]
             }
         },
+        "/nearest-halte": {
+            "post": {
+                "tags": [
+                    "Route"
+                ],
+                "summary": "Get Nearest Haltes",
+                "description": "Find the nearest halte(s) from given coordinates. Requires bearer token.",
+                "operationId": "a3a6f526dcae4330e3c6b8eb0ebdf65f",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "lat",
+                                    "lng"
+                                ],
+                                "properties": {
+                                    "lat": {
+                                        "type": "number",
+                                        "format": "float",
+                                        "example": -7.77432
+                                    },
+                                    "lng": {
+                                        "type": "number",
+                                        "format": "float",
+                                        "example": 110.37051
+                                    },
+                                    "count": {
+                                        "type": "integer",
+                                        "example": 1
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success retrieve nearest haltes data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "code": {
+                                            "type": "integer",
+                                            "example": 200
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Success retrieve nearest haltes data"
+                                        },
+                                        "data": {
+                                            "properties": {
+                                                "user": {
+                                                    "properties": {
+                                                        "lat": {
+                                                            "type": "number",
+                                                            "example": -7.77432
+                                                        },
+                                                        "lng": {
+                                                            "type": "number",
+                                                            "example": 110.37051
+                                                        }
+                                                    },
+                                                    "type": "object"
+                                                },
+                                                "haltes": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "properties": {
+                                                            "id": {
+                                                                "type": "integer",
+                                                                "example": 129
+                                                            },
+                                                            "name": {
+                                                                "type": "string",
+                                                                "example": "Kopma UGM"
+                                                            },
+                                                            "latitude": {
+                                                                "type": "string",
+                                                                "example": "-7.77432"
+                                                            },
+                                                            "longitude": {
+                                                                "type": "string",
+                                                                "example": "110.37512"
+                                                            },
+                                                            "link": {
+                                                                "type": "string",
+                                                                "format": "uri",
+                                                                "example": "https://www.google.com/maps?q=-7.77432,110.37512"
+                                                            },
+                                                            "created_at": {
+                                                                "type": "string",
+                                                                "format": "date-time",
+                                                                "example": "2025-05-09 15:40:34"
+                                                            },
+                                                            "updated_at": {
+                                                                "type": "string",
+                                                                "format": "date-time",
+                                                                "example": "2025-05-09 15:40:34"
+                                                            },
+                                                            "distance": {
+                                                                "type": "integer",
+                                                                "example": 724
+                                                            },
+                                                            "polyline": {
+                                                                "type": "array",
+                                                                "items": {
+                                                                    "type": "array",
+                                                                    "items": {
+                                                                        "type": "number"
+                                                                    }
+                                                                },
+                                                                "example": [
+                                                                    [
+                                                                        110.37053,
+                                                                        -7.774260000000001
+                                                                    ],
+                                                                    [
+                                                                        110.37074000000001,
+                                                                        -7.7743
+                                                                    ]
+                                                                ]
+                                                            }
+                                                        },
+                                                        "type": "object"
+                                                    }
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Validation error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Your input is invalid"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
         "/halte": {
             "get": {
                 "tags": [
@@ -1711,6 +1881,10 @@
         {
             "name": "Chat",
             "description": "Chat"
+        },
+        {
+            "name": "Route",
+            "description": "Route"
         },
         {
             "name": "Halte",
