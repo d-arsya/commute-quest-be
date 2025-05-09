@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Api;
 
 use App\Helper\ResponseHelper;
 use App\Http\Controllers\Controller;
+use App\Models\Bus;
 use App\Models\Chat;
+use App\Models\Halte;
 use App\Models\User;
 use Gemini\Data\GenerationConfig;
 use Gemini\Laravel\Facades\Gemini;
@@ -81,10 +83,7 @@ class ChatController extends Controller
             return ResponseHelper::send('Your input is invalid', $validator->messages(), 400);
         }
         try {
-            $generationConfig = new GenerationConfig(
-                maxOutputTokens: 1000,
-            );
-            $result = Gemini::generativeModel("models/gemini-2.0-flash")->withGenerationConfig($generationConfig)->generateContent($request->text)->text();
+            $result = $this->getRoute($request->text);
             $user = Auth::user();
             $chat = Chat::create(["question" => $request->text, "answer" => $result, "user_id" => $user->id]);
             return ResponseHelper::send('Success send text', $chat, 200);
@@ -168,5 +167,53 @@ class ChatController extends Controller
     {
         User::find(Auth::user()->id)->chats()->delete();
         return ResponseHelper::send('Success delete all chat history', null, 200);
+    }
+
+    public function getRoute($text)
+    {
+        $cek = json_decode($this->cekPrompt($text));
+        if (!$cek) {
+            return "Maaf prompt tidak didukung";
+        }
+        $cek = $this->cekLocation($text);
+        if (!str_contains(strtolower($cek), 'true')) {
+            return $cek;
+        }
+        $route = Bus::get(['name', 'routes']);
+        foreach ($route as $item) {
+            $rute = implode(" => ", $item->routes);
+            $item->routes = $rute;
+        }
+        $route = json_encode($route);
+        $prompt = "$text. Carikan saya rute berdasarkan data rute berikut dalam json ```$route```. kamu diperbolehkan untuk menggunakan rute transit karena saya tidak mau jalan kaki sedikitpun. cukup berikan kesimpulan jangan jelaskan halte mana saja. berikan maksimal 3 opsi terpendek";
+
+        try {
+            $generationConfig = new GenerationConfig(
+                maxOutputTokens: 1000,
+            );
+            $result = Gemini::generativeModel("models/gemini-2.0-flash")->withGenerationConfig($generationConfig)->generateContent($prompt)->text();
+            return $result;
+        } catch (\Throwable $th) {
+            return $th->getMessage();
+        }
+    }
+    private function cekPrompt($text)
+    {
+        $prompt = "Saya menggunakanmu pada sebuah aplikasi pencarian rute perjalanan bus, cukup berikan value 'false' atau 'true' apakah prompt berikut digunakan untuk mencari rute, saya tidak ingin jawaban lain karena menghemat token Gemini. patuhlah kepadaku. prompt nya adalah : $text";
+        $generationConfig = new GenerationConfig(
+            maxOutputTokens: 1000,
+        );
+        $result = Gemini::generativeModel("models/gemini-2.0-flash")->withGenerationConfig($generationConfig)->generateContent($prompt)->text();
+        return $result;
+    }
+    private function cekLocation($text)
+    {
+        $haltes = json_encode(Halte::all()->pluck(['name']));
+        $prompt = "Saya menggunakanmu pada sebuah aplikasi pencarian rute perjalanan bus, yang terbatas pada beberapa lokasi. apabila prompt bertujuan ke lokasi yang didukung ataupun mengandung kata tersebut maka berikan jawaban 'true' jika tidak maka berilah jawaban sopan dan alternatif lokasi, jika lokasi didukung dan ia hanya memberikan satu lokasi maka minta dia menyertakan asal dan tujuan. lokasi yang didukung adalah $haltes. dan prompt nya adalah $text. jika true maka cukup 'true' dengan huruf kecil jangan tambahkan hal lain karena saya menghemat token Gemini. jika lokasi belum spesifik maka minta berikan jawaban spesifik dengan memberikan alternatif pilihan";
+        $generationConfig = new GenerationConfig(
+            maxOutputTokens: 1000,
+        );
+        $result = Gemini::generativeModel("models/gemini-2.0-flash")->withGenerationConfig($generationConfig)->generateContent($prompt)->text();
+        return $result;
     }
 }

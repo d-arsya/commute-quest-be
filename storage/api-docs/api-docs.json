@@ -840,9 +840,15 @@
                         "application/json": {
                             "schema": {
                                 "required": [
+                                    "old_password",
                                     "password"
                                 ],
                                 "properties": {
+                                    "old_password": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "newStrongPassword123"
+                                    },
                                     "password": {
                                         "type": "string",
                                         "format": "password",

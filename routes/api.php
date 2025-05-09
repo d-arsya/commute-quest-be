@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\ChatController;
+use App\Http\Controllers\Api\MapsController;
 use App\Http\Controllers\Api\RouteController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -21,7 +22,11 @@ Route::controller(RouteController::class)->group(function () {
     Route::post('halte', 'getHalteDetail');
     Route::get('bus', 'getAllBus');
     Route::post('bus', 'getBusDetail');
-    Route::get('coba-chat', 'chatAi');
+    // Route::get('coba-chat', 'chatAi');
+});
+
+Route::controller(MapsController::class)->group(function () {
+    Route::post('nearest-halte', 'getNearestHalte');
 });
 
 
