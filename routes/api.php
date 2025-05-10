@@ -25,13 +25,15 @@ Route::controller(RouteController::class)->group(function () {
     // Route::get('coba-chat', 'chatAi');
 });
 
-Route::controller(MapsController::class)->group(function () {
-    Route::post('nearest-halte', 'getNearestHalte');
-});
 
 
 
 Route::middleware('auth:sanctum')->group(function () {
+    Route::controller(MapsController::class)->group(function () {
+        Route::post('nearest-halte', 'getNearestHalte');
+        Route::post('auto-complete', 'autoCompletion');
+        Route::get('place-detail/{placeId}', 'placeDetails');
+    });
     Route::controller(AuthController::class)->group(function () {
         Route::get('profile', 'profile');
         Route::put('profile', 'profileUpdate');

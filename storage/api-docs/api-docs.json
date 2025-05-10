@@ -1498,6 +1498,124 @@
                 ]
             }
         },
+        "/auto-complete": {
+            "post": {
+                "tags": [
+                    "Route"
+                ],
+                "summary": "Get autocomplete suggestions for location search",
+                "description": "Returns list of predicted places based on input text, including coordinates.",
+                "operationId": "faeddd678e5a8bb6b66ddeb3245346d5",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "text"
+                                ],
+                                "properties": {
+                                    "text": {
+                                        "type": "string",
+                                        "example": "Stasiun Bogor"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success retrieve nearest haltes data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "code": {
+                                            "type": "integer",
+                                            "example": 200
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Success retrieve nearest haltes data"
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "coords": {
+                                                        "properties": {
+                                                            "latitude": {
+                                                                "type": "number",
+                                                                "format": "float",
+                                                                "example": -6.5956203
+                                                            },
+                                                            "longitude": {
+                                                                "type": "number",
+                                                                "format": "float",
+                                                                "example": 106.7897462
+                                                            }
+                                                        },
+                                                        "type": "object"
+                                                    },
+                                                    "placeId": {
+                                                        "type": "string",
+                                                        "example": "ChIJy-YfMAPFaS4R3A9KhGYqX0c"
+                                                    },
+                                                    "text": {
+                                                        "type": "string",
+                                                        "example": "Stasiun Bogor, RW.06, Cibogor, Bogor City, West Java, Indonesia"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid input",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "code": {
+                                            "type": "integer",
+                                            "example": 400
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Your input is invalid"
+                                        },
+                                        "errors": {
+                                            "type": "object"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
         "/halte": {
             "get": {
                 "tags": [

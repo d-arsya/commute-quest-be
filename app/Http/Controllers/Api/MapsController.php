@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
+use SKAgarwal\GoogleApi\PlacesNew\GooglePlaces;
 use yidas\googleMaps\Client;
 
 class MapsController extends Controller
@@ -184,5 +185,84 @@ class MapsController extends Controller
             ]
         );
         return $routes["routes"][0];
+    }
+    /**
+     * @OA\Post(
+     *     path="/auto-complete",
+     *     tags={"Route"},
+     *     summary="Get autocomplete suggestions for location search",
+     *     description="Returns list of predicted places based on input text, including coordinates.",
+     *     security={{"bearerAuth":{}}},
+     *
+     *     @OA\RequestBody(
+     *         required=true,
+     *         @OA\JsonContent(
+     *             required={"text"},
+     *             @OA\Property(property="text", type="string", example="Stasiun Bogor")
+     *         )
+     *     ),
+     *
+     *     @OA\Response(
+     *         response=200,
+     *         description="Success retrieve nearest haltes data",
+     *         @OA\JsonContent(
+     *             @OA\Property(property="success", type="boolean", example=true),
+     *             @OA\Property(property="code", type="integer", example=200),
+     *             @OA\Property(property="message", type="string", example="Success retrieve nearest haltes data"),
+     *             @OA\Property(
+     *                 property="data",
+     *                 type="array",
+     *                 @OA\Items(
+     *                     @OA\Property(property="coords", type="object",
+     *                         @OA\Property(property="latitude", type="number", format="float", example=-6.5956203),
+     *                         @OA\Property(property="longitude", type="number", format="float", example=106.7897462),
+     *                     ),
+     *                     @OA\Property(property="placeId", type="string", example="ChIJy-YfMAPFaS4R3A9KhGYqX0c"),
+     *                     @OA\Property(property="text", type="string", example="Stasiun Bogor, RW.06, Cibogor, Bogor City, West Java, Indonesia")
+     *                 )
+     *             )
+     *         )
+     *     ),
+     *
+     *     @OA\Response(
+     *         response=400,
+     *         description="Invalid input",
+     *         @OA\JsonContent(
+     *             @OA\Property(property="success", type="boolean", example=false),
+     *             @OA\Property(property="code", type="integer", example=400),
+     *             @OA\Property(property="message", type="string", example="Your input is invalid"),
+     *             @OA\Property(property="errors", type="object")
+     *         )
+     *     )
+     * )
+     */
+
+    public function autoCompletion(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'text' => 'required|string',
+        ]);
+
+        if ($validator->fails()) {
+            return ResponseHelper::send('Your input is invalid', $validator->messages(), 400);
+        }
+        $response = GooglePlaces::make()->autocomplete($request->text);
+
+        $data = collect($response->collect()["suggestions"]);
+        $data = $data->map(function ($location) {
+            $location["coords"] = $this->placeDetails($location["placePrediction"]["placeId"]);
+            $location["placeId"] = $location["placePrediction"]["placeId"];
+            $location["text"] = $location["placePrediction"]["text"]["text"];
+            unset($location["placePrediction"]);
+            return $location;
+        });
+        return ResponseHelper::send('Success retrieve nearest haltes data', $data, 200);
+    }
+    public function placeDetails(string $placeId)
+    {
+        $response = GooglePlaces::make()->placeDetails($placeId);
+
+        $data = $response->collect();
+        return $data["location"];
     }
 }
