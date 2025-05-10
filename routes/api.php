@@ -41,5 +41,6 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::post('chat', 'chatRequest');
         Route::get('chat', 'chatHistory');
         Route::delete('chat', 'chatClear');
+        Route::delete('chat/{chat}', 'destroy');
     });
 });

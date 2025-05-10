@@ -8,7 +8,7 @@ class Chat extends Model
 {
     protected $table = 'chats';
     protected $fillable = ['answer', 'question', 'user_id'];
-    protected $visible = ['answer', 'question'];
+    protected $visible = ['id', 'answer', 'question'];
 
     public function user()
     {

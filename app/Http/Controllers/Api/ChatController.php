@@ -168,6 +168,47 @@ class ChatController extends Controller
         User::find(Auth::user()->id)->chats()->delete();
         return ResponseHelper::send('Success delete all chat history', null, 200);
     }
+    /**
+     * @OA\Delete(
+     *     path="/chat/{chat}",
+     *     tags={"Chat"},
+     *     summary="Delete specific chat history",
+     *     description="Delete a chat history by ID for the authenticated user. Requires Bearer token.",
+     *     security={{"bearerAuth":{}}},
+     *     @OA\Parameter(
+     *         name="chat",
+     *         in="path",
+     *         required=true,
+     *         description="ID of the chat to be deleted",
+     *         @OA\Schema(type="string", example="15")
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="Success delete chat history",
+     *         @OA\JsonContent(
+     *             type="object",
+     *             @OA\Property(property="success", type="boolean", example=true),
+     *             @OA\Property(property="code", type="integer", example=200),
+     *             @OA\Property(property="message", type="string", example="Success delete chat history"),
+     *             @OA\Property(property="data", type="string", nullable=true, example=null)
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=401,
+     *         description="Unauthorized - Invalid or missing token"
+     *     ),
+     *     @OA\Response(
+     *         response=404,
+     *         description="Chat not found"
+     *     )
+     * )
+     */
+
+    public function destroy(Request $request, string $chat)
+    {
+        User::find(Auth::user()->id)->chats()->where('id', $chat)->delete();
+        return ResponseHelper::send('Success delete chat history', null, 200);
+    }
 
     public function getRoute($text)
     {
