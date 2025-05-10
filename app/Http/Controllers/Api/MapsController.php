@@ -329,20 +329,6 @@ class MapsController extends Controller
      *     )
      * )
      */
-
-    public function getMapsLink(Request $request)
-    {
-        $validator = Validator::make($request->all(), [
-            'originLatitude' => 'required|decimal:5',
-            'originLongitude' => 'required|decimal:5',
-            'destinationLatitude' => 'required|decimal:5',
-            'destinationLongitude' => 'required|decimal:5',
-        ]);
-        if ($validator->fails()) {
-            return ResponseHelper::send('Your input is invalid', $validator->messages(), 400);
-        }
-        return ResponseHelper::send('Success retrieve routes data', $data, 200);
-    }
     public function getRoute(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -373,7 +359,15 @@ class MapsController extends Controller
                     ]
                 ]
             ],
-            ["travelMode" => "TRANSIT"]
+            [
+                "travelMode" => "TRANSIT",
+                "transitPreferences" => [
+                    "allowedTravelModes" => ["BUS"],
+                    "routingPreference" => "LESS_WALKING"
+                ],
+                "computeAlternativeRoutes" => true
+            ],
+            // ["routes.*"]
         );
         $route = $this->decodePolyline($routes["routes"][0]["polyline"]["encodedPolyline"]);
         $data = [
@@ -389,6 +383,71 @@ class MapsController extends Controller
             "duration" => $routes["routes"][0]["duration"],
             "routes" => $route
         ];
-        return ResponseHelper::send('Success retrieve routes data', $data, 200);
+        return ResponseHelper::send('Success retrieve routes data', $routes, 200);
+    }
+    /**
+     * @OA\Post(
+     *     path="/get-maps-link",
+     *     summary="Generate a Google Maps direction link",
+     *     description="Returns a Google Maps direction URL using the given origin and destination coordinates.",
+     *     operationId="getMapsLink",
+     *     tags={"Route"},
+     *     security={{"bearerAuth":{}}},
+     *     @OA\RequestBody(
+     *         required=true,
+     *         @OA\JsonContent(
+     *             required={
+     *                 "originLatitude", 
+     *                 "originLongitude", 
+     *                 "destinationLatitude", 
+     *                 "destinationLongitude"
+     *             },
+     *             @OA\Property(property="originLatitude", type="number", format="float", example=-7.77142),
+     *             @OA\Property(property="originLongitude", type="number", format="float", example=110.38329),
+     *             @OA\Property(property="destinationLatitude", type="number", format="float", example=-7.77142),
+     *             @OA\Property(property="destinationLongitude", type="number", format="float", example=110.36561)
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="Success retrieve routes data",
+     *         @OA\JsonContent(
+     *             @OA\Property(property="success", type="boolean", example=true),
+     *             @OA\Property(property="code", type="integer", example=200),
+     *             @OA\Property(property="message", type="string", example="Success retrieve routes data"),
+     *             @OA\Property(
+     *                 property="data",
+     *                 type="object",
+     *                 @OA\Property(
+     *                     property="link",
+     *                     type="string",
+     *                     example="https://www.google.com/maps/dir/?api=1&origin=-7.77142,110.38329&destination=-7.77142,110.36561&travelmode=transit"
+     *                 )
+     *             )
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=400,
+     *         description="Invalid input"
+     *     ),
+     *     @OA\Response(
+     *         response=401,
+     *         description="Unauthenticated"
+     *     )
+     * )
+     */
+
+    public function getMapsLink(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'originLatitude' => 'required|decimal:5',
+            'originLongitude' => 'required|decimal:5',
+            'destinationLatitude' => 'required|decimal:5',
+            'destinationLongitude' => 'required|decimal:5',
+        ]);
+        if ($validator->fails()) {
+            return ResponseHelper::send('Your input is invalid', $validator->messages(), 400);
+        }
+        return ResponseHelper::send('Success retrieve routes data', ["link" => "https://www.google.com/maps/dir/?api=1&origin={$request->originLatitude},{$request->originLongitude}&destination={$request->originLatitude},{$request->destinationLongitude}&travelmode=transit"], 200);
     }
 }
