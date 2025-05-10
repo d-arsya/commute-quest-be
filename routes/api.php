@@ -22,7 +22,6 @@ Route::controller(RouteController::class)->group(function () {
     Route::post('halte', 'getHalteDetail');
     Route::get('bus', 'getAllBus');
     Route::post('bus', 'getBusDetail');
-    // Route::get('coba-chat', 'chatAi');
 });
 
 
@@ -44,5 +43,6 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::get('chat', 'chatHistory');
         Route::delete('chat', 'chatClear');
         Route::delete('chat/{chat}', 'destroy');
+        Route::get('chat-recommendation', 'chatRecommendation');
     });
 });

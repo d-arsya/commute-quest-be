@@ -1328,6 +1328,60 @@
                 ]
             }
         },
+        "/chat-recommendation": {
+            "get": {
+                "tags": [
+                    "Chat"
+                ],
+                "summary": "Get chat recommendations",
+                "description": "Generate 5 recommended chat prompts based on previous chat history and halte data using Gemini AI. Requires Bearer token.",
+                "operationId": "1672f19760cfad4072859ac0e27ebed8",
+                "responses": {
+                    "200": {
+                        "description": "Success get chat recommendation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "success": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "code": {
+                                            "type": "integer",
+                                            "example": 200
+                                        },
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Success get chat recommendation"
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "string",
+                                                "example": "Saya ingin pergi dari Stasiun Yogyakarta ke Terminal Condongcatur"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized - Invalid or missing token"
+                    },
+                    "500": {
+                        "description": "Internal server error"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
         "/nearest-halte": {
             "post": {
                 "tags": [

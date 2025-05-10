@@ -86,6 +86,9 @@ class ChatController extends Controller
             $result = $this->getRoute($request->text);
             $user = Auth::user();
             $chat = Chat::create(["question" => $request->text, "answer" => $result, "user_id" => $user->id]);
+            if ($chat->answer == "Maaf prompt tidak didukung") {
+                $chat->delete();
+            }
             return ResponseHelper::send('Success send text', $chat, 200);
         } catch (\Throwable $th) {
             return ResponseHelper::send('Error', $th->getMessage(), 500);
@@ -256,5 +259,52 @@ class ChatController extends Controller
         );
         $result = Gemini::generativeModel("models/gemini-2.0-flash")->withGenerationConfig($generationConfig)->generateContent($prompt)->text();
         return $result;
+    }
+    /**
+     * @OA\Get(
+     *     path="/chat-recommendation",
+     *     tags={"Chat"},
+     *     summary="Get chat recommendations",
+     *     description="Generate 5 recommended chat prompts based on previous chat history and halte data using Gemini AI. Requires Bearer token.",
+     *     security={{"bearerAuth":{}}},
+     *     @OA\Response(
+     *         response=200,
+     *         description="Success get chat recommendation",
+     *         @OA\JsonContent(
+     *             type="object",
+     *             @OA\Property(property="success", type="boolean", example=true),
+     *             @OA\Property(property="code", type="integer", example=200),
+     *             @OA\Property(property="message", type="string", example="Success get chat recommendation"),
+     *             @OA\Property(
+     *                 property="data",
+     *                 type="array",
+     *                 @OA\Items(type="string", example="Saya ingin pergi dari Stasiun Yogyakarta ke Terminal Condongcatur")
+     *             )
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=401,
+     *         description="Unauthorized - Invalid or missing token"
+     *     ),
+     *     @OA\Response(
+     *         response=500,
+     *         description="Internal server error"
+     *     )
+     * )
+     */
+
+    public function chatRecommendation(Request $request)
+    {
+        $chat = json_encode(Auth::user()->chats);
+        $halte = json_encode(Halte::all());
+        $prompt = "sebelumnya user telah melakukan prompt dan saya ingin memintamu memberikan 5 chat rekomendasi selanjutnya. berikut adalah riwayatnya dalam json ```$chat```. dan berikut adalah data halte yang kami punya ```$halte```. contoh rekomendasinya adalah \"saya ingin pergi dari UGM ke UII\", \"berapa lama ke ugm dari uii\". untuk hasil yang kamu berikan cukup berikan dalam format json array dari teks";
+        $generationConfig = new GenerationConfig(
+            maxOutputTokens: 1000,
+        );
+        $result = Gemini::generativeModel("models/gemini-2.0-flash")->withGenerationConfig($generationConfig)->generateContent($prompt)->text();
+        $result = str_replace('`', '', $result);
+        $result = str_replace('json', '', $result);
+        $result = json_decode($result);
+        return ResponseHelper::send('Success get chat recommendation', $result, 200);
     }
 }
