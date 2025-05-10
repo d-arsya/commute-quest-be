@@ -265,4 +265,116 @@ class MapsController extends Controller
         $data = $response->collect();
         return $data["location"];
     }
+    /**
+     * @OA\Post(
+     *     path="/get-route",
+     *     summary="Get route data between origin and destination",
+     *     description="Retrieve route information including distance, duration, and polyline between two coordinates using Google Maps API.",
+     *     operationId="postRoute",
+     *     tags={"Route"},
+     *     security={{"bearerAuth":{}}},
+     *     @OA\RequestBody(
+     *         required=true,
+     *         @OA\JsonContent(
+     *             required={"originLatitude", "originLongitude", "destinationLatitude", "destinationLongitude"},
+     *             @OA\Property(property="originLatitude", type="number", format="float", example=-7.77388),
+     *             @OA\Property(property="originLongitude", type="number", format="float", example=110.37258),
+     *             @OA\Property(property="destinationLatitude", type="number", format="float", example=-7.76743),
+     *             @OA\Property(property="destinationLongitude", type="number", format="float", example=110.37891)
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="Success retrieve routes data",
+     *         @OA\JsonContent(
+     *             @OA\Property(property="success", type="boolean", example=true),
+     *             @OA\Property(property="code", type="integer", example=200),
+     *             @OA\Property(property="message", type="string", example="Success retrieve routes data"),
+     *             @OA\Property(
+     *                 property="data",
+     *                 type="object",
+     *                 @OA\Property(
+     *                     property="origin",
+     *                     type="object",
+     *                     @OA\Property(property="latitude", type="number", format="float", example=-7.77388),
+     *                     @OA\Property(property="longitude", type="number", format="float", example=110.37258)
+     *                 ),
+     *                 @OA\Property(
+     *                     property="destination",
+     *                     type="object",
+     *                     @OA\Property(property="latitude", type="number", format="float", example=-7.76743),
+     *                     @OA\Property(property="longitude", type="number", format="float", example=110.37891)
+     *                 ),
+     *                 @OA\Property(property="distance", type="integer", example=1456),
+     *                 @OA\Property(property="duration", type="string", example="302s"),
+     *                 @OA\Property(
+     *                     property="routes",
+     *                     type="array",
+     *                     @OA\Items(
+     *                         type="array",
+     *                         @OA\Items(type="number", format="float")
+     *                     )
+     *                 )
+     *             )
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=400,
+     *         description="Invalid input"
+     *     ),
+     *     @OA\Response(
+     *         response=401,
+     *         description="Unauthenticated"
+     *     )
+     * )
+     */
+
+
+    public function getRoute(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'originLatitude' => 'required|decimal:5',
+            'originLongitude' => 'required|decimal:5',
+            'destinationLatitude' => 'required|decimal:5',
+            'destinationLongitude' => 'required|decimal:5',
+        ]);
+
+        if ($validator->fails()) {
+            return ResponseHelper::send('Your input is invalid', $validator->messages(), 400);
+        }
+        $gmaps = new Client(['key' => env('MAPS_API_KEY')]);
+        $routes = $gmaps->computeRoutes(
+            [
+                "location" => [
+                    "latLng" => [
+                        "latitude" => $request->originLatitude,
+                        "longitude" => $request->originLongitude
+                    ]
+                ]
+            ],
+            [
+                "location" => [
+                    "latLng" => [
+                        "latitude" => $request->destinationLatitude,
+                        "longitude" => $request->destinationLongitude
+                    ]
+                ]
+            ]
+        );
+        $route = $this->decodePolyline($routes["routes"][0]["polyline"]["encodedPolyline"]);
+        $data = [
+            "origin" => [
+                "latitude" => $request->originLatitude,
+                "longitude" => $request->originLongitude
+            ],
+            "destination" => [
+                "latitude" => $request->destinationLatitude,
+                "longitude" => $request->destinationLongitude
+            ],
+            "distance" => $routes["routes"][0]["distanceMeters"],
+            "duration" => $routes["routes"][0]["duration"],
+            "routes" => $route
+        ];
+        return ResponseHelper::send('Success retrieve routes data', $data, 200);
+    }
 }
