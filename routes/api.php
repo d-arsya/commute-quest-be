@@ -32,6 +32,7 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::post('nearest-halte', 'getNearestHalte');
         Route::post('auto-complete', 'autoCompletion');
         Route::post('get-route', 'getRoute');
+        Route::get('get-maps-link', 'getMapsLink');
         Route::get('place-detail/{placeId}', 'placeDetails');
     });
     Route::controller(AuthController::class)->group(function () {

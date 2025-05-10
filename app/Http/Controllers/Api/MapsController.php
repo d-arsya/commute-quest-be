@@ -182,7 +182,8 @@ class MapsController extends Controller
                         "longitude" => $delng
                     ]
                 ]
-            ]
+            ],
+            ["travelMode" => "TRANSIT"]
         );
         return $routes["routes"][0];
     }
@@ -329,7 +330,19 @@ class MapsController extends Controller
      * )
      */
 
-
+    public function getMapsLink(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'originLatitude' => 'required|decimal:5',
+            'originLongitude' => 'required|decimal:5',
+            'destinationLatitude' => 'required|decimal:5',
+            'destinationLongitude' => 'required|decimal:5',
+        ]);
+        if ($validator->fails()) {
+            return ResponseHelper::send('Your input is invalid', $validator->messages(), 400);
+        }
+        return ResponseHelper::send('Success retrieve routes data', $data, 200);
+    }
     public function getRoute(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -359,7 +372,8 @@ class MapsController extends Controller
                         "longitude" => $request->destinationLongitude
                     ]
                 ]
-            ]
+            ],
+            ["travelMode" => "TRANSIT"]
         );
         $route = $this->decodePolyline($routes["routes"][0]["polyline"]["encodedPolyline"]);
         $data = [
